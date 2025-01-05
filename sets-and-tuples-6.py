@@ -1,30 +1,24 @@
 
 my_set = {1, 2, 3, 4, 5, 1, 2}
-
 print(my_set)
 
-# loop through
+# remove 3
 
-for i in my_set:
-  print(i)
-
-# remove a value from a set
-my_set.discard(2)
+my_set.remove(1)
 print(my_set)
 
-# remove all elememts from a set
-my_set.clear();
+# add 39
+my_set.add(39)
 print(my_set)
 
-# add to a set
-my_set.add(8)
+# update
+
+my_set.update([7, 11])
 print(my_set)
 
-# add more than one value to a set
-my_set.update([7,8,0])
+
+my_set.discard(11)
 print(my_set)
 
-# tuples
+print(len(my_set))
 
-my_tuple = (1, 2, 3, 4, 5,)
-print(my_tuple)
