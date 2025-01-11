@@ -1,16 +1,29 @@
-# For and while loops
+"""
+Writing for loop in Python is a tad different from C++ and Java counterparts. In this question, we'll learn to print table by using the for loop.
 
-my_list = [1,2,3,4,5]
+You are given a number N, you need to print its multiplication table.
 
-sum = 0
-for x in my_list:
-  sum += x
-  
-print(sum)
+Note: Please go through the range function to understand why it's useful in for loops.
 
+Example 1:
 
-i = 0
+Input:
+N = 5
+Output:
+5 10 15 20 25 30 35 40 45 50
+Example 2:
 
-while i < 5:
-    i += 1
-    print(i)
+Input:
+N = 6
+Output:
+6 12 18 24 30 36 42 48 54 60
+Your Task:
+This is a function problem. You don't need to take input of testcases. Just complete the function multiplicationTable() that takes N as input.
+
+Constraints:
+1 <= N <= 1018
+"""
+
+def multiply(N):
+    for i in range(1, 11):
+      print(i * N)
