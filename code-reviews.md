@@ -1,35 +1,84 @@
-Code review framework for frontend team.
+# Frontend Code Review Guidelines
 
-1. Context
+## Purpose
+This document outlines the code review process and requirements for the frontend team. Following these guidelines ensures consistent, high-quality code reviews that facilitate knowledge sharing and maintain code quality.
 
-Feature MRs must have a BRD attached to it. this helps the reviewer to gather knowledge about what the code review is trying to achieve.
+## 1. Context Requirements
 
-2. Test plan
+Every feature merge request must include a Business Requirements Document (BRD). This document helps reviewers understand the purpose and scope of the changes.
 
-A test plan is used to show that your code actually works.
+Including proper context reduces review time and helps catch potential issues early in the development cycle.
 
-It should be visual if possible. it can be a list of all the test cases and steps to verify those test cases. this could take time so its best to use video or a gif.
+## 2. Test Plan
 
-Example of a test plan
-https://github.com/Gear61/Random-Name-Picker/pull/183
+A comprehensive test plan demonstrates that your code works as intended and provides a reference for future maintenance.
 
-Benefits of having a test plan:
+### Required Components
 
-- Basic trust token showing your teammates that your code works, at least in the core flow
-- Turns your code review into a much more informative and self-documented piece of codebase history
-- Makes it far easier for people not to break whatever is in your code review when they work with it in the future
+**Visual Documentation**
+- Include screenshots or GIFs showing the feature in action
+- Capture both successful flows and error states
+- Keep videos focused and under 30 seconds
 
-Show a repeatable way to test your change
+**Test Scenarios**
+- Document the testing environment and prerequisites
+- List manual test cases with clear steps
+- Include edge cases and error conditions
 
-- If you're adding automated tests, include the command to run it
-- With a video, show the full process of triggering the flow altered by the commit (e.g. tapping into a certain screen on a website)
+A good test plan serves as a trust token between team members and becomes valuable documentation for future reference.
 
+## 3. Pull Request Size and Focus
 
-3. Create small and focused PRs follow the "One diff, one thesis" principle
+Follow the "One diff, one thesis" principle by keeping pull requests focused and manageable.
 
-Every commit and pull request (PR) you put out should have a singular focus. Don't just dump your entire feature into 1 massive 2,500 line PR; it's extremely difficult to review and you are robbing yourself of real technical feedback.
-A good average range for a PR is 50-250 lines of code. If it's substantially higher than 250, there's a good chance your PR is simply too big.
+### Size Guidelines
+- Target size: 50-250 lines of code
+- Maximum recommended size: 250 lines
+- Larger changes should be split into smaller, logical chunks
 
-Breaking up your pull requests will take more time initially (10-15 minutes), but it's completely worth it as it saves you time in the long-term. Smaller, more focused PRs get better feedback and are merged in faster.
+### Breaking Down Large Changes
+When a feature requires extensive changes, break it down into smaller PRs following a logical sequence:
+1. foundational changes (New files, new UI components)
+2. Core functionality
+3. Feature enhancements and polish
 
-Having this habit alongside all the other good code review behaviors (linked below) is one of the most straightforward way to get a stellar performance review as an earlier-in-career engineer. Conversely, not following these guidelines is one of the easiest ways to have bad performance as a software engineer.
+## 4. Code Quality Standards
+
+All code submissions should meet the following quality standards:
+
+**Technical Requirements**
+- Follow established coding style and patterns (Consistency, avoid unecessary overengineering (KISS), remove unused variables, use pure functions, use descriptive and meaningful variable names)
+- Ensure proper error handling
+- Consider performance implications
+- Maintain accessibility standards
+
+**Documentation**
+- Update component documentation
+- Add inline comments for complex logic
+
+## 5. Review Process
+
+### Timeline Expectations
+- Initial review: Within 1 business day
+- Follow-up reviews: Within 4 business hours
+- Critical fixes: Same day review
+
+### Review Focus Areas
+- Functionality: Does it work as intended?
+- Code quality: Is it maintainable and efficient?
+- Testing: Is it properly tested?
+- Documentation: Is it well documented?
+
+## Best Practices
+
+1. **Early Feedback**
+   Start code reviews early by creating draft PRs for discussion of approach and architecture.
+
+2. **Clear Communication**
+   Use clear and constructive language in review comments. Focus on the code, not the developer.
+
+3. **Iterative Improvement**
+   Address feedback promptly and keep the review cycle moving forward.
+
+4. **Knowledge Sharing**
+   Use code reviews as an opportunity to share knowledge and mentor team members.
