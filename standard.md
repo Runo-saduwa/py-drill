@@ -16,6 +16,7 @@ WHEN URGENT:
 
 ## Meetings & Availability 🗓️
 
+
 ### Stand-ups
 - Join on time
 - If you can't make it:
