@@ -56,3 +56,7 @@ This is a function problem. You don't need to take input. Just complete the func
 def stringJumper(str: str):
     for i in range(0, len(str), 2):
         print(str[i])
+        
+        
+for i in [1, 2]:
+    print(i)
