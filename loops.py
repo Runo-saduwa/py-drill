@@ -58,5 +58,5 @@ def stringJumper(str: str):
         print(str[i])
         
         
-for i in [1, 2]:
+for i in [1, 2,3,4,3]:
     print(i)
