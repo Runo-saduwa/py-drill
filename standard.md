@@ -42,6 +42,7 @@ First of all 'take ownership'
 
 ## Quality First 🎯
 
+
 ### Code Quality
 - Request early feedback
 - Add context to your MRs, add a test plan, make your MRs small and focused
