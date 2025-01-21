@@ -4,8 +4,7 @@ def checkOddEven(x: int):
       return 'Even'
     else:
       return 'Odd'
-    
-    
+  
 
 print(checkOddEven(10))
 print(checkOddEven(23))
