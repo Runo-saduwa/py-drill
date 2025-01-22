@@ -8,4 +8,6 @@ def checkOddEven(x: int):
 
 print(checkOddEven(10))
 print(checkOddEven(23))
+
+
   
