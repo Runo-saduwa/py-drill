@@ -8,6 +8,11 @@ test = {
   2: 2
 }
 
+names = {
+  'tega': 'tega',
+  'runo': 'runo'
+}
+
 user['married'] = False
 
 
