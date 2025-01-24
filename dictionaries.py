@@ -3,11 +3,6 @@ user = {
   'name': 'runo peter'
 }
 
-test = {
-  1: 1,
-  2: 2
-}
-
 names = {
   'tega': 'tega',
   'runo': 'runo'
